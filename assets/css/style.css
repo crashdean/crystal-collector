@@ -1,0 +1,53 @@
+body {
+    height: 100%;
+    width: 100%; 
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    
+    background-color: rgb(236, 134, 65);
+    Height: 110px;
+    width: 345px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+h1 { 
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+    
+}
+
+.nav {
+    width: 350px;
+    height: 125px;
+}
+
+.instruction {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+    background-color: rgba(241, 229, 195, 0.986);
+    padding: 15px;
+    Margin-top: 20px;
+    margin-left: 10px;
+    width: 500px;
+    height: 490px;
+}
+
+.numbergen {
+    
+    background-color: rgb(21, 190, 86);
+    height: 30px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
