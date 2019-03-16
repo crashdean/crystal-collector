@@ -6,48 +6,100 @@ body {
     background-size: cover;
 }
 
-.header {
-    
+.header { 
     background-color: rgb(236, 134, 65);
-    Height: 110px;
+    Height: 75px;
     width: 345px;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-left: 10px;
 }
 
 h1 { 
+    font-size: 30px;
     color: white;
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    
-    
-}
-
-.nav {
-    width: 350px;
-    height: 125px;
+    margin-top:20px;
+    margin-left: 15px; 
 }
 
 .instruction {
-    font-size: 18px;
+    font-size: 16px;
     color: green;
     font-weight: bold;
+    border-width:1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
     background-color: rgba(241, 229, 195, 0.986);
     padding: 15px;
     Margin-top: 20px;
     margin-left: 10px;
-    width: 500px;
-    height: 490px;
+    height: 250px;
+    width: 600px;
 }
 
-.numbergen {
-    
-    background-color: rgb(21, 190, 86);
-    height: 30px;
-    width: 150px;
-    margin-top: 20px;
+.images {
+    margin-top: 10px;
+    padding: 0 0 0 0;
+}
+
+.img {
     margin-left: 10px;
 }
 
+.scorecard {
+    width: 600px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ .random {
+    background-color: rgb(21, 190, 86);
+    height:100px;
+    border-width:1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+ }
+
+ .computer {
+    font-size: 20px;
+     margin-top: 25px;
+ }
+
+ .player {
+    background-color: aqua;
+    color: rgb(58, 44, 44);
+    height: 100px; 
+    
+    border-width:1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px; 
+}
+
+.total {
+    font-size: 20px;
+    margin-top: 25px;    
+}
+
+.info {
+    background-color: rgb(173, 192, 62);
+    height: 100px;
+    border-width:1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.wins {
+    font-size: 16px;
+    color: rgb(58, 44, 44);
+    margin-top: 15px;
+    padding: 0;
+}    
+
+.lose {
+    font-size: 16px;
+    color: rgb(58, 44, 44);
+    padding: 0;
+}

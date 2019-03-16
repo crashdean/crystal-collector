@@ -18,51 +18,135 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row nav">
-            <div class="col-sm-12">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+        <a class="navbar-brand" href="#">Crystal Collector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Index<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+
+            </span>
+        </div>
+    </nav>
+
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-sm-6">
                 <div class="header">
                     <h1>Crystal Collector!</h1>
                 </div>
             </div>
-        </div>
+        </div>-->
 
-        <div class="row instruction">
-            <div class="col-sm-12">
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
-                    your
-                    total score.</p>
-                <p>You win the game by matching your total score to random number, you lose the game if your total score
-                    above the random number.</p>
-                <p>The value of each crytal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    <div class="row instruction">
+        <div class="col-sm-12">
+            <div>
+                <ul>
+                    <li>You will be given a random number at the start of the game.</li>
+                    <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your total score.</li>
+                    <li>You win the game by matching your total score to random number, you lose the game if your total
+                        score above the random number.</li>
+                    <li>The value of each crytal is hidden from you until you click on it.</li>
+                    <li>Each time when the game starts, the game will change the values of each crystal.</li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <div class="row numbergen">
-            <div class="col-sm-6">
-                <p>Text1</p>
-            </div>
-            <div class="col-sm-6">
-                <p>Text2</p>
-            </div>
-
+    <div class="row images">
+        <div class="col-sm-12 img">
+            <img class = "gem1" src="assets/images/sitting guy.jpg" alt="cartoon" height="147" width="147">
+            <img class = "gem2" src="assets/images/rebbecca.jpg" alt="cartoon" height="147" width="147">
+            <img class = "gem3" src="assets/images/big guy.jpg" alt="cartoon" height="147" width="147">
+            <img class = "gem4" src="assets/images/green cat.jpg" alt="cartoon" height="147" width="147">
         </div>
-        <!---</div>-->
+    </div>
 
+    <div class="row scorecard">
+        <div class="col-4 col-sm-4 random">
+            <p class="computer">Computer:</p>
+        </div>
+        <div class="col-4 col-sm-4 player">
+            <p class="total">Player:</p>
+        </div>
+        <div class="col-8 col-sm-4 info">
+            <p class="wins">Player Wins:</p>
+            <p class="lose">Player Losses:</p>
+        </div>
+    </div>
+    <div>
+            <button id="random-button" class="btn btn-primary btn-lg"><h1>Start</h1></button>
+    </div>
 
-        <script type="text/javascript">
+    <h1 class="text-center" id="random-number"></h1>
 
-            $(document).ready(function () {
+    <script type="text/javascript">
+        /*var randomNumber
+        var playerScore
+        var yellowGem
+        var redGem
+        var blueGem
+        var greenGem
+        var wins
+        var losses*/
 
-
-
-
-
-
+        $(document).ready(function(){
+    
+            $("#random-button").click(function()
+            /*function randomComputerNumber()*/ {
+                var randomNumber = "";
+                randomNumber = Math.floor(Math.random() * 102) + 19
+                $(".computer").append(randomNumber);
             });
-        </script>
+        
+        });
+
+            $(".gem1").click(function()
+            /*function redGemNumber()*/ {
+                var redGem = "";
+                redGem = Math.floor(Math.random() * 12) + 1
+                $(".total").append(redGem);
+            });
+
+            $(".gem2").click(function()
+            /*function redGemNumber()*/ {
+                var purpleGem = "";
+                redGem = Math.floor(Math.random() * 12) + 1
+                $(".total").append(redGem);
+            });
+
+            $(".gem3").click(function()
+            /*function redGemNumber()*/ {
+                var whiteGem = "";
+                redGem = Math.floor(Math.random() * 12) + 1
+                $(".total").append(redGem);
+            });
+
+            $(".gem4").click(function()
+            /*function redGemNumber()*/ {
+                var greenGem = "";
+                redGem = Math.floor(Math.random() * 12) + 1
+                $(".total").append(redGem);
+            });
+            
+    
+    </script>
 </body>
 
 </html>
