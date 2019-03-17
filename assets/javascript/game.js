@@ -1,5 +1,3 @@
-
-        
         var randomNumber = ""
         var playerScore = 0
         var redGem = ""
@@ -9,12 +7,6 @@
         var wins = 0
         var losses = 0
         var winner = "Stop"
-
-        function initializeCrystals() {
-            playerScore = 0;
-
-        $(".computer, .total, .gem1, .gem2, .gem3, .gem4").empty();
-    }
 
         $(document).ready(function() {
     
@@ -28,12 +20,7 @@
                 greenGem = Math.floor(Math.random() * 12) + 1  
                 playerScore = 0;
                 $('.total').text(playerScore); 
-                $('.gem1, .gem2, .gem3, .gem4').on('click')
             });
-
-        
-
-            
 
             $(".gem1").click(function() {
                  playerScore += redGem;
@@ -62,27 +49,12 @@
             function checkScore() {
                 if (playerScore > randomNumber) {
                     losses++;
-                    $('.lose').text(losses);
-                       
+                    $('.lose').text(losses);       
                 }
                 else if (playerScore === randomNumber) {
                     wins++;
-                    $('.wins').text(wins);
-                    
-                    
+                    $('.wins').text(wins);    
                 }
             }
-
-        
-
-            
-                // function reset() {
-                    // randomNumber = 0;
-                    // playerScore = 0;
-                    // $('.total').text(playerScore);
-                    // $('.computer').text(randomNumber);
-                    // $('.gem1, .gem2, .gem3, .gem4').text(playerScore);
-                
-            // }
         
         });

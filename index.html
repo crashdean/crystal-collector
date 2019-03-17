@@ -14,7 +14,7 @@
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-     
+
 </head>
 
 <body>
@@ -26,44 +26,25 @@
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!--<div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Index<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-            </ul>-->
-            <span class="navbar-text">
 
-            </span>
+        <span class="navbar-text">
+
+        </span>
         </div>
     </nav>
-
-    <!--<div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="header">
-                    <h1>Crystal Collector!</h1>
-                </div>
-            </div>
-        </div>-->
 
     <div class="row instruction">
         <div class="col-sm-12">
             <div class="purpose">
                 <ul>
                     <li>You will be given a random number at the start of the game.</li>
-                    <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                    <li>There are four crystal characters below. By clicking on a character you will add a specific
+                        amount of points
                         to your total score.</li>
                     <li>You win the game by matching your total score to random number, you lose the game if your total
                         score above the random number.</li>
-                    <li>The value of each crytal is hidden from you until you click on it.</li>
-                    <li>Each time when the game starts, the game will change the values of each crystal.</li>
+                    <li>The value of each character is hidden from you until you click on it.</li>
+                    <li>Each time when the game starts, the game will change the values of each character.</li>
                 </ul>
             </div>
         </div>
@@ -71,10 +52,10 @@
 
     <div class="row images">
         <div class="col-sm-12 img">
-            <img class = "gem1" src="assets/images/sitting guy.jpg" alt="cartoon" height="147" width="147">
-            <img class = "gem2" src="assets/images/rebbecca.jpg" alt="cartoon" height="147" width="147">
-            <img class = "gem3" src="assets/images/big guy.jpg" alt="cartoon" height="147" width="147">
-            <img class = "gem4" src="assets/images/green cat.jpg" alt="cartoon" height="147" width="147">
+            <img class="gem1" src="assets/images/sitting guy.jpg" alt="cartoon" height="147" width="147">
+            <img class="gem2" src="assets/images/rebbecca.jpg" alt="cartoon" height="147" width="147">
+            <img class="gem3" src="assets/images/big guy.jpg" alt="cartoon" height="147" width="147">
+            <img class="gem4" src="assets/images/green cat.jpg" alt="cartoon" height="147" width="147">
         </div>
     </div>
 
@@ -86,17 +67,19 @@
             <p class="display">Player:<span class="total">0</span></p>
         </div>
         <div class="col-8 col-sm-4 info">
-            <p>Player Wins: <span class="wins">0</span></p>
-            <p>Player Losses: <span class="lose">0</span></p>
+            <p class="win">Player Wins: <span class="wins">0</span></p>
+            <p class="loses">Player Losses: <span class="lose">0</span></p>
         </div>
     </div>
     <div>
-            <button id="random-button" class="btn btn-primary btn-lg"><h1 class="start">Start</h1></button>
+        <button id="random-button" class="btn btn-primary btn-lg">
+            <h1 class="start">Start</h1>
+        </button>
     </div>
 
 
-    <script src = "assets/javascript/game.js"></script>
-    
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>
