@@ -14,7 +14,7 @@
     <!-- Added a link to our external stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-
+     
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <!--<div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Index<span class="sr-only">(current)</span></a>
@@ -37,7 +37,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-            </ul>
+            </ul>-->
             <span class="navbar-text">
 
             </span>
@@ -55,7 +55,7 @@
 
     <div class="row instruction">
         <div class="col-sm-12">
-            <div>
+            <div class="purpose">
                 <ul>
                     <li>You will be given a random number at the start of the game.</li>
                     <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points
@@ -80,73 +80,23 @@
 
     <div class="row scorecard">
         <div class="col-4 col-sm-4 random">
-            <p class="computer">Computer:</p>
+            <p class="display">Computer:<span class="computer">0</span></p>
         </div>
         <div class="col-4 col-sm-4 player">
-            <p class="total">Player:</p>
+            <p class="display">Player:<span class="total">0</span></p>
         </div>
         <div class="col-8 col-sm-4 info">
-            <p class="wins">Player Wins:</p>
-            <p class="lose">Player Losses:</p>
+            <p>Player Wins: <span class="wins">0</span></p>
+            <p>Player Losses: <span class="lose">0</span></p>
         </div>
     </div>
     <div>
-            <button id="random-button" class="btn btn-primary btn-lg"><h1>Start</h1></button>
+            <button id="random-button" class="btn btn-primary btn-lg"><h1 class="start">Start</h1></button>
     </div>
 
-    <h1 class="text-center" id="random-number"></h1>
 
-    <script type="text/javascript">
-        /*var randomNumber
-        var playerScore
-        var yellowGem
-        var redGem
-        var blueGem
-        var greenGem
-        var wins
-        var losses*/
-
-        $(document).ready(function(){
+    <script src = "assets/javascript/game.js"></script>
     
-            $("#random-button").click(function()
-            /*function randomComputerNumber()*/ {
-                var randomNumber = "";
-                randomNumber = Math.floor(Math.random() * 102) + 19
-                $(".computer").append(randomNumber);
-            });
-        
-        });
-
-            $(".gem1").click(function()
-            /*function redGemNumber()*/ {
-                var redGem = "";
-                redGem = Math.floor(Math.random() * 12) + 1
-                $(".total").append(redGem);
-            });
-
-            $(".gem2").click(function()
-            /*function redGemNumber()*/ {
-                var purpleGem = "";
-                redGem = Math.floor(Math.random() * 12) + 1
-                $(".total").append(redGem);
-            });
-
-            $(".gem3").click(function()
-            /*function redGemNumber()*/ {
-                var whiteGem = "";
-                redGem = Math.floor(Math.random() * 12) + 1
-                $(".total").append(redGem);
-            });
-
-            $(".gem4").click(function()
-            /*function redGemNumber()*/ {
-                var greenGem = "";
-                redGem = Math.floor(Math.random() * 12) + 1
-                $(".total").append(redGem);
-            });
-            
-    
-    </script>
 </body>
 
 </html>
